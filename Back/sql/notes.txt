@@ -1,0 +1,41 @@
+Tablas de base de datos de DataFlor:
+
+- TABLA flowerShops:
+  * idflowerShops (AUTO INCREMENTAL) (LLAVE PRIMARIA)
+  * fullName (NOT NULL)
+  * address (NOT NULL)
+  * phone (NOT NULL)
+  * inventoryID (NOT NULL)
+
+- TABLA Users:
+  * userID (AUTO INCREMENTAL) (LLAVE PRIMARIA)
+  * username (NOT NULL)
+  * password (NOT NULL)
+  * fullName (NOT NULL)
+  * phone (NOT NULL)
+  * role (admin, owner, employee) (NOT NULL)
+  * idflowerShops (NULL SI role == admin) (SE COGE DE LA TABLA flowerShops)
+
+- Products:
+  * productID (AUTO INCREMENTAL) (LLAVE PRIMARIA)
+  * productName (NOT NULL)
+  * description (NULL)
+  * price (NOT NULL)
+
+- Images:
+  * imageID (AUTO INCREMENTAL) (NOT NULL)
+  * productID (NOT NULL) (SE COGE DE LA TABLA Products)
+  * imageURL (NOT NULL)
+
+- Providers:
+  * providerID (AUTO INCREMENTAL) (NOT NULL)
+  * fullName (NOT NULL)
+  * phone (NOT NULL)
+  * address (NOT NULL)
+
+- Inventory:
+  * id (AUTO INCREMENTAL) (NOT NULL)
+  * inventoryID (NOT NULL) (SE COGE DE LA TABLA flowerShops)
+  * productID (NOT NULL) (SE COGE DE LA TABLA Products)
+  * quantity (NOT NULL)
+  * providerID (NOT NULL) (SE COGE DE LA TABLA Providers)
