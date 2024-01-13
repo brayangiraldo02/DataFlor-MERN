@@ -5,7 +5,11 @@ export default class NavBar extends Component {
   render() {
     return (
       <header>
-        <h1>DataFlor</h1>
+        <nav class="navbar">
+          <div class="navbar-brand">
+            <a class="navbar-logo" href="/"><img src='/img/dataflor.png' alt='DataFlor'></img></a>
+          </div>
+        </nav>
       </header>
     )
   }
