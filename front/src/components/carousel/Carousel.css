@@ -1,0 +1,69 @@
+/* Estilos para el contenedor del carrusel */
+.carouselContainer {
+  width: 100%;
+  height: 650px; /* Altura ajustable según tus necesidades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px; /* Ajusta este valor según tus necesidades */
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  border-radius: 5%;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 32px;
+  font-size: 45px;
+  color: #faf2ff;
+  z-index: 1;
+  cursor: pointer;
+  right: 2%;
+  font-size: 30px;
+  background-color:transparent;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+  font-size: 45px;
+  color: #faf2ff;
+  z-index: 1;
+  cursor: pointer;
+  left: 2%;
+  font-size: 30px;
+  background-color:transparent;
+}
+
+.slider {
+  width: 90vw; /* Cambia este valor al ancho deseado */
+  height: 650px; /* Altura ajustable según tus necesidades */
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  bottom: 10px; /* Ajusta esta posición según tu preferencia */
+  width: 100%;
+}
+
+.dot {
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 20px;
+}

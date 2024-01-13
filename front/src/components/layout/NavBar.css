@@ -1,0 +1,20 @@
+header {
+  background-color: rgb(146, 14, 124);
+  border: 1px solid rgb(238, 6, 229);
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: 'Karla', 'sans-serif';
+  font-size: 25px;
+}
+
+.navbar .navbar-brand .navbar-logo img {
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 250px;
+}
